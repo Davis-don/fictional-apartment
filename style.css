@@ -124,3 +124,55 @@ color: white;
   }
 
 /* End of hero section styling */
+
+/* Start of spaces styling */
+.spaces-ovarall-container{
+width: 100%;
+height: max-content;
+background-image: url(./Images/pexels-fotoaibe-1571460.jpg),linear-gradient(rgba(9, 9, 9, 0.8), rgba(0, 0, 0, 0.8));
+background-blend-mode: darken;
+background-position: bottom;
+background-size: cover;
+padding: 40px;
+}
+.houses-div-overall-container{
+display: grid;
+grid-template-columns: repeat(auto-fit,minmax(300px,1fr));
+margin-top: 30px;
+gap:20px
+}
+.house-card{
+  min-height: 30rem;
+
+background-color: rgb(252, 252, 254);
+}
+.housecard-image{
+width: 100%;
+height: 80%;
+}
+.housecard-image img{
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+.house-price{
+  color: red;
+}
+@media screen and (max-width: 420px) {
+  .houses-div-overall-container{
+    display: grid;
+grid-template-columns: repeat(auto-fit,minmax(100px,1fr));
+margin-top: 30px;
+gap:20px
+
+  }
+  .house-card{
+    height: max-content;
+  }
+  }
+/* End of spaces styling */
+/* Start of facilities section styling */
+.overall-facilities-container{
+
+}
+/* End of facilities section styling */
