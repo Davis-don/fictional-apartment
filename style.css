@@ -1,0 +1,84 @@
+@import url('https://fonts.googleapis.com/css2?family=Lobster&display=swap');
+
+
+/*start of global colors*/
+:root{
+  --color-white:white;
+ --color-black:black;
+}
+/* end of global colors */
+
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+html{
+  font-size:62.5%;
+}
+body{
+font-size: 1.6rem;
+}
+/* Start of header styling */
+.header-section{
+display: flex;
+flex-direction: row;
+justify-content: space-between;
+background-image: linear-gradient(to right, rgb(62, 17, 17) , rgb(70, 70, 3));
+color:var(--color-white);
+padding: 20px;
+}
+.logo-name{
+  font-family: "Lobster", sans-serif;
+  font-weight: 400;
+  font-style: normal;
+  font-size: 20px;
+}
+.nav-links{
+margin-right: 20vw;
+}
+.nav-links-ul{
+list-style: none;
+display: flex;
+flex-direction: row;
+gap:25px
+}
+.nav-links-ul li:hover{
+background-color: var(--color-black);
+}
+.nav-links-ul li a{
+  text-decoration: none;
+  color: var(--color-white);
+  font-size: 20px;
+}
+.font-menu-icon{
+font-size: 20px;
+}
+@media screen and (max-width: 748px) {
+  .nav-links{
+    margin-right: 5vw;
+    }
+    .nav-links-ul{
+     
+      gap:15px
+      }
+  }
+@media screen and (max-width: 574px) {
+.nav-links{
+display: none;
+}
+}
+@media screen and (min-width: 574px) {
+  .menu-icon-container{
+  display: none;
+  }
+  }
+  @media screen and (max-width: 236px) {
+    .logo-name{
+    font-size: 7vw;
+    }
+    .font-menu-icon{
+      font-size:7vw;
+      }
+    }
+/* End of header styling */
