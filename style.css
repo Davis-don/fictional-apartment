@@ -208,3 +208,92 @@ padding: 20px;
     padding: 10px;
   }
 /* End of facilities section styling */
+
+/* Start of contact us styling */
+.contact-use-overall-design{
+padding: 20px;
+}
+.contact-divs-card-holder{
+display: flex;
+flex-direction: row;
+justify-content: space-evenly;
+flex-wrap: wrap;
+}
+.contact-cards-container{
+display: flex;
+flex-direction: column;
+gap: 20px;
+}
+
+.contact-card{
+display: flex;
+flex-direction: row;
+gap:20px;
+}
+.contact-icon{
+background-color: rgb(6, 6, 69);
+padding: 20px;
+border-radius: 50%;
+}
+.contact-icon i{
+font-size: 20px;
+color: white;
+}
+.contact-details{
+  padding: 20px;
+  font-size: 19px;
+}
+.contact-form label{
+  font-size: 20px;
+}
+.contact-form-container{
+
+}
+.form-input{
+width: 30rem;
+padding: 10px;
+border-radius: 20px;
+}
+#message{
+  width: 30rem;
+  border-radius: 10px;
+  height: 60px;
+}
+.submit-btn-container{
+  width: max-content;
+  margin: auto;
+}
+.submit-button{
+width: 15rem;
+padding: 10px;
+}
+@media screen and (max-width: 384px) {
+  .get-in-touch-heading{
+    font-size: 10vw;
+  }
+
+  .contact-card{
+    display: flex;
+    flex-direction: row;
+    gap:0px
+    }
+    .contact-icon{
+      padding: 7vw;
+    }
+    .contact-details{
+      padding: 20px;
+      font-size: 5vw;
+    }
+    .form-input{
+      width: 90vw;
+      }
+      #message{
+        width: 90vw;
+       
+      }
+      .submit-button{
+        width: max-content;
+        padding: 10px;
+        }
+  }
+/* End of contact us styling */
