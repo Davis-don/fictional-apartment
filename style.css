@@ -173,6 +173,38 @@ gap:20px
 /* End of spaces styling */
 /* Start of facilities section styling */
 .overall-facilities-container{
+  padding: 20px;
 
 }
+.facilities-card-containers{
+display: grid;
+grid-template-columns: repeat(auto-fit,minmax(30rem,1fr));
+gap: 20px;
+}
+.facility-card{
+  height: 10rem;
+  display: flex;
+  flex-direction: roe;
+  justify-content: center;
+  align-items: center;
+  box-shadow: 10px 10px 20px rgba(0, 0, 0, 0.5);
+}
+.facility-icon{
+padding: 20px;
+}
+.facility-icon i{
+  font-size: 4rem;
+}
+@media screen and (max-width: 330px) {
+  .facilities-card-containers{
+    display: flex;
+    flex-direction: column;
+    }
+  }
+  .facility-card{
+    display: flex;
+    flex-direction: column;
+    height: max-content;
+    padding: 10px;
+  }
 /* End of facilities section styling */
