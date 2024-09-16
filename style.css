@@ -123,23 +123,39 @@ background-size: cover;
 
 }
 .hero-section-text{
-  position: absolute;
+  position: relative;
   z-index: +1;
-  width: 400px;
+  width: 80vw;
   height: max-content;
-  top:30vh;
-  left: 5vw;
+  top:25vh;
+  left: 7vw;
 }
 .hero-section-intro-text{
-  font-size:300%;
+  font-size:350%;
   color:var(--color-white);
   font-weight: bold;
 }
+.supporting-text-paragraph{
+font-size: 25px;
+margin-top: 3rem;
+}
+.btn-container-holder{
+  width: max-content;
+  margin-left: auto;
+  margin-right: auto;
+}
 .book-btn{
-width: 100px;
-padding: 10px;
-background-color: rgb(37, 10, 10);
+width: 12rem;
+outline: none;
+padding: 15px;
+background-color: rgb(124, 115, 7);
 color: white;
+margin-top: 20px;
+border-radius: 11px;
+font-size: 1.5rem;
+}
+.book-btn:hover{
+  background-color:rgb(62, 62, 2);
 }
 @media screen and (max-width: 498px) {
   .hero-section-text{
@@ -147,8 +163,35 @@ color: white;
   top:25vh
   }
   .hero-section-intro-text{
-  font-size: 200%;
+  font-size: 230%;
   }
+  .supporting-text-paragraph{
+    font-size: 22px;
+    margin-top: 10px;
+    }
+  }
+  @media screen and (max-width: 280px) {
+    .hero-section-text{
+      width: 80vw;
+      top:10vh
+      }
+      .hero-section-intro-text{
+      font-size: 210%;
+      }
+      .supporting-text-paragraph{
+        font-size: 1.8rem;
+        margin-top: 2rem;
+        }
+        .book-btn{
+          width: max-content;
+          outline: none;
+          padding: 15px;
+          background-color: rgb(124, 115, 7);
+          color: white;
+          margin-top: 20px;
+          border-radius: 11px;
+          font-size: 1.5rem;
+          }
   }
 
 /* End of hero section styling */
